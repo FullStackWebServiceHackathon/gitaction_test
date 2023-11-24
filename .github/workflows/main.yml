@@ -1,0 +1,17 @@
+name: auto repo pull
+
+concurrency: 
+  group: production
+  cancel-in-progress: true
+  
+on:
+  push:
+jobs:
+  pull:
+    runs-on: self-hosted
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+        with:
+          path: gitaction_test
