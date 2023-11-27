@@ -14,5 +14,5 @@ jobs:
 
     steps:
       - name: Checkout Repository
-        run: git pull
+        run: sudo git pull
         working-directory: /gitaction_test
