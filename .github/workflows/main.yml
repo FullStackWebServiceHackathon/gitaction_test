@@ -6,12 +6,13 @@ concurrency:
   
 on:
   push:
+      branches: [ main ]
 jobs:
-  pull:
+  pull-job:
+    name: update-server
     runs-on: self-hosted
 
     steps:
       - name: Checkout Repository
-        uses: actions/checkout@v2
-        with:
-          path: gitaction_test
+        run: git pull
+        working-directory: /gitaction_test
