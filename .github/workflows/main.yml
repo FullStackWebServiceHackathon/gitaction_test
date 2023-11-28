@@ -13,6 +13,6 @@ jobs:
     runs-on: self-hosted
 
     steps:
-      - name: Checkout Repository
-        run: sudo git pull
-        working-directory: /gitaction_test
+      - name: pull repo
+        run: cd /gitaction_test/; git pull;
+        
