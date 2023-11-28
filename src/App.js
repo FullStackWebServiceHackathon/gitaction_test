@@ -17,8 +17,7 @@ function App() {
         >
           Learn React
         </a>
-        <p>git action test</p>
-        <p>됐냐???</p>
+        <p>git action test 시즌 1423호 도전</p>
       </header>
     </div>
   );
